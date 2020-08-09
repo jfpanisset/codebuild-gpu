@@ -16,3 +16,4 @@ phases:
     commands:
       - |
         cat /proc/driver/nvidia/version
+        cat /proc/driver/nvidia/gpus/*/information
