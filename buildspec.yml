@@ -17,3 +17,5 @@ phases:
       - |
         cat /proc/driver/nvidia/version
         cat /proc/driver/nvidia/gpus/*/information
+        /usr/bin/nvidia-smi
+        DISPLAY=:0.0 /usr/bin/glxinfo
