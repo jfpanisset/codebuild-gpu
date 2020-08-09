@@ -1,0 +1,18 @@
+version: 0.2
+
+env:
+  variables:
+    CXX: g++
+    CC: gcc
+  exported-variables:
+    - CXX
+    - CC
+
+phases:
+  pre_build:
+    commands:
+      - git clone https://github.com/jfpanisset/codebuild-gpu.git
+  build:
+    commands:
+      - |
+        cat /proc/driver/nvidia/version
