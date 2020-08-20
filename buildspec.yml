@@ -19,3 +19,5 @@ phases:
         cat /proc/driver/nvidia/gpus/*/information
         /usr/bin/nvidia-smi
         DISPLAY=:0.0 /usr/bin/glxinfo
+        cc egltest.c -o egltest -lGL -lEGL
+        ./egltest
